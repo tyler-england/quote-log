@@ -1,6 +1,9 @@
 Attribute VB_Name = "Module2"
 Option Explicit
-
+Dim iNumMsgs As Integer, arrErrorEmails() As String, bNewMsg As Boolean
+Sub test()
+    Call ErrorRep("test", "sub", "na", 1234, "lskd", "")
+End Sub
 Function ExportModules() As Boolean
     Dim wbMacro As Workbook, varVar As Variant, bOpen As Boolean
     For Each varVar In Application.Workbooks
