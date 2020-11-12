@@ -245,6 +245,7 @@ Application.ScreenUpdating = True
 Exit Sub
 errhandler:
 MsgBox "Error in PopulateLog sub"
+Call ErrorRep("PopulateLog", "Sub", "N/A", Err.Number, Err.Description, "")
 End Sub
 
 Function FindLatestWkbk(quotePath As String) As String
